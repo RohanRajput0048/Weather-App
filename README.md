@@ -6,7 +6,7 @@ This is a simple and responsive weather application that allows users to fetch a
 
 ## 📸 Demo
 
-![weather-app-demo](Images/background_image.jpg)  
+![weather-app-demo](Images/image.png)  
 > *Screenshot of the app with dynamic weather data display*
 
 ---
