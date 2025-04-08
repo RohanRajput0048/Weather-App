@@ -1,10 +1,7 @@
-import dotenv from "dotenv";
+import { API_KEY } from "./config.js";
 
-dotenv.config({
-    path: ".env"
-})
+const key = API_KEY;
 
-const key = process.env.API_KEY;
 const form = document.querySelector('form');
 
 form.addEventListener("keypress", (e) => {
@@ -14,6 +11,8 @@ form.addEventListener("keypress", (e) => {
         console.log(location)
         fetch(`http://api.weatherapi.com/v1/current.json?key=${key}&q=${location}&aqi=no`)
         .then((response) => {
+            console.log("adssfd");
+            
             return response.json()
         })
         .then((data) => {
